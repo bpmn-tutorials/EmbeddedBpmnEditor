@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <script src="https://kiegroup.github.io/kogito-online/standalone/bpmn/index.js"></script>
+        <script src="index.js"></script>
         <style>
             #bpmn-editor-container {
             height: 1000px;
@@ -41,14 +41,18 @@
                         [
                             [
                                 "name" : "BusinessRuleTask",
-                                "parameters" : [
-                                "Language" : new StringDataType(),
-                                "KieSessionName" : new StringDataType(),
-                                "KieSessionType" : new StringDataType()
-                                ],
                                 "displayName" : "Business Rule Task",
-                                "icon" : "defaultbusinessrulesicon.png",
-                                "category" : "Decision tasks"
+                                "icon" : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACiElEQVR42oWTXUiTURjHZ1ZKWHmTFH3RRVdddONNpsNWLkmd+tqHCjOIklZgUzZhy/UxhXSGyiqKvshAStK1uggi6CYhFnUhE2dgKK+G5cBJ7z7c2nn+nZ0ZflzMAwfel/f8f8/z/5/nVTHGiCkBYmGFWH8bscoMYi/sxBbCxOb9RPx7qqWi35NEXXUg0yGw8/uAMhWoPB2spQh06QBIHkWqpYI8SlS3QwiFWJe29FyWBnJ3pwaQu4vo3J6kyJiL4NQ4op53YKeyOIBDvrxdowPuWVSqyoQyIyMUCiGo/EG8VbfYEbfTaxGHIwsxsVcCbtcQ6daBKtaD/ZqAoigIc0C0RZsE8E6Cz6wIRhZw8EI71MYeTM3OYfynHzxebmFWJla/XxyOn92J2IMGRNsqASkD4GEqn17jCBflGjqRXnQFqqMN2Fxmxt6a65j2Bzhg7DORPifpdzG85TvSfwu7qm1CeLihCzWtT5FVasK2KiuGvD+4hb8xoo/PQQMOUK9ViFh1NmhoAPE79bjZ8wQZxY3YUmqGf24egUAAF7tfCuBWXTMHAPQ/EAoroPbTCD82w+PxgM8JpBtJQGZxE8YmpnnIYUi2h9hwvBFN912rAFzQ6XDAaDSioKAAHR0dGHS/wWXnK1Exu7wZOZJFZLGRAz589a0ExGIxaDQalJSUCEh+fj4MBgOM9wax+8w1bD95VYCOme+iwvYIo5MzS4BoNCqEeXl5GB4eFtdpt9vFe19fH/g/g973Hmw6YcK37/KyOVgExONxuFwuFBYWwul0Coher0dtbS28Xq84nLj3BGjlIC2zkKiq1WqhVqtF5QTMYrGsMcqrQvT5fHC73ZAkCSMjI5BlOSXgH5e1GrmCfrJvAAAAAElFTkSuQmCC",
+                                "parameters" : [
+                                    "Language" : new StringDataType(),
+                                    "KieSessionName" : new StringDataType(), 
+                                    "KieSessionType" : new StringDataType()
+                                ],
+                                "results" : [
+                                    "Result" : new StringDataType()
+                                ],
+                                "category" : "Decision tasks",
+                                "documentation" : "Task for execution Business Rules"
                             ]
                         ]
                         `)
