@@ -4,6 +4,7 @@ Example of Embedded Bpmn Editor.
 ![Sample image](./docs/sample.png)
 
 ## Sample contains:
+* Full sample ![source](./index.html)
 * Latest upstream release Embedded Editor
 * Buttons to interact with BPMN Editor through editor API
 * Changed/Unchanged status
